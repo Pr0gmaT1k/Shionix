@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MenuItem" representedClassName="MenuItem" syncable="YES" codeGenerationType="class">
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SearchDetail" representedClassName="SearchDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="phone_number" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SearchItem" representedClassName="SearchItem" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="detail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchDetail"/>
+    </entity>
+    <entity name="SearchItems" representedClassName="SearchItems" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SearchItem"/>
+    </entity>
+    <entity name="SearchResult" representedClassName="SearchResult" syncable="YES" codeGenerationType="class">
+        <attribute name="responseCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="result" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchItems"/>
+    </entity>
+    <elements>
+        <element name="MenuItem" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="SearchDetail" positionX="-18" positionY="45" width="128" height="73"/>
+        <element name="SearchItem" positionX="-36" positionY="18" width="128" height="73"/>
+        <element name="SearchItems" positionX="-54" positionY="9" width="128" height="73"/>
+        <element name="SearchResult" positionX="-63" positionY="0" width="128" height="73"/>
+    </elements>
+</model>
