@@ -51,6 +51,4 @@ extension HomeCoordinator: HomeVCDelegate {
 }
 
 // MARK:- SearchVC Delegate
-extension HomeCoordinator: SearchVCDelegate {
-    
-}
+extension HomeCoordinator: SearchVCDelegate {}

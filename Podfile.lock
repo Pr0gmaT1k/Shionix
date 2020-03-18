@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - IDZSwiftCommonCrypto (0.13.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -21,6 +22,7 @@ PODS:
   - Toaster (2.2.0)
 
 DEPENDENCIES:
+  - IDZSwiftCommonCrypto
   - Moya
   - RealmSwift
   - Reusable
@@ -31,6 +33,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - IDZSwiftCommonCrypto
     - Moya
     - Realm
     - RealmSwift
@@ -42,6 +45,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IDZSwiftCommonCrypto: 00dd37cdfbd149312a7e5a582cf9909f8b129f44
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Realm: 9357c3589555793e1860a7104a7412bca4a48d99
   RealmSwift: 402f1e379a8ef82c635313037b043f0f06de880c
@@ -51,6 +55,6 @@ SPEC CHECKSUMS:
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
   Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
 
-PODFILE CHECKSUM: 1dda9c954b4ad7ed9eefe85f9ddd49b9a97c8ad6
+PODFILE CHECKSUM: 860165b1f83a67e6ecf3679fd3c34383edc82e03
 
 COCOAPODS: 1.8.4
