@@ -8,6 +8,7 @@ target ‘Shionix’ do
   pod 'Reusable'
   pod 'SwiftLint'
   pod 'SwiftGen'
+  pod 'Toaster'
 
     target 'ShionixTests' do
         inherit! :search_paths

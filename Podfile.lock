@@ -18,6 +18,7 @@ PODS:
   - Reusable/View (4.1.0)
   - SwiftGen (6.1.0)
   - SwiftLint (0.38.2)
+  - Toaster (2.2.0)
 
 DEPENDENCIES:
   - Moya
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - Reusable
   - SwiftGen
   - SwiftLint
+  - Toaster
 
 SPEC REPOS:
   trunk:
@@ -36,6 +38,7 @@ SPEC REPOS:
     - Reusable
     - SwiftGen
     - SwiftLint
+    - Toaster
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -46,7 +49,8 @@ SPEC CHECKSUMS:
   Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
+  Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
 
-PODFILE CHECKSUM: 8666fa54b80fd0979d4ff67625867c3fef9eb4cb
+PODFILE CHECKSUM: 1dda9c954b4ad7ed9eefe85f9ddd49b9a97c8ad6
 
 COCOAPODS: 1.8.4

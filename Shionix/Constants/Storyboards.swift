@@ -16,6 +16,10 @@ internal enum StoryboardScene {
     internal static let storyboardName = "Home"
 
     internal static let initialScene = InitialSceneType<Shionix.HomeVC>(storyboard: Home.self)
+
+    internal static let homeVC = SceneType<Shionix.HomeVC>(storyboard: Home.self, identifier: "HomeVC")
+
+    internal static let searchVC = SceneType<Shionix.SearchVC>(storyboard: Home.self, identifier: "SearchVC")
   }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"

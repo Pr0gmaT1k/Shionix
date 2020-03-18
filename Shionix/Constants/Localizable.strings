@@ -1,3 +1,4 @@
 ////////////////////////////////////////////////////////////////////////////////
-// MARK: Auth
-"test.test" = "test";
+// MARK: Home
+"Home.Welcome" = "Bienvenido";
+"Home.Nombre" = "Fransisco";
