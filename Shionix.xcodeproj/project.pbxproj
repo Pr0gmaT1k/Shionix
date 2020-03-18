@@ -20,8 +20,8 @@
 		BAB712B92421AA3000E53A5A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712A82421AA3000E53A5A /* Fonts.swift */; };
 		BAB712BA2421AA3000E53A5A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712A92421AA3000E53A5A /* Images.swift */; };
 		BAB712BB2421AA3000E53A5A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712AA2421AA3000E53A5A /* Colors.swift */; };
-		BAB712BC2421AA3000E53A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712AC2421AA3000E53A5A /* ViewController.swift */; };
-		BAB712BD2421AA3000E53A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB712AD2421AA3000E53A5A /* Main.storyboard */; };
+		BAB712BC2421AA3000E53A5A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712AC2421AA3000E53A5A /* Home.swift */; };
+		BAB712BD2421AA3000E53A5A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB712AD2421AA3000E53A5A /* Home.storyboard */; };
 		BAB712BE2421AA3000E53A5A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712B02421AA3000E53A5A /* Environment.swift */; };
 		BAB712E42421AAFD00E53A5A /* Prompt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C32421AAFD00E53A5A /* Prompt-ThinItalic.ttf */; };
 		BAB712E52421AAFD00E53A5A /* Prompt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C42421AAFD00E53A5A /* Prompt-BlackItalic.ttf */; };
@@ -99,8 +99,8 @@
 		BAB712A82421AA3000E53A5A /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		BAB712A92421AA3000E53A5A /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		BAB712AA2421AA3000E53A5A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		BAB712AC2421AA3000E53A5A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BAB712AD2421AA3000E53A5A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BAB712AC2421AA3000E53A5A /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		BAB712AD2421AA3000E53A5A /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BAB712B02421AA3000E53A5A /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		BAB712C32421AAFD00E53A5A /* Prompt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-ThinItalic.ttf"; sourceTree = "<group>"; };
 		BAB712C42421AAFD00E53A5A /* Prompt-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -281,8 +281,8 @@
 		BAB712AB2421AA3000E53A5A /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				BAB712AC2421AA3000E53A5A /* ViewController.swift */,
-				BAB712AD2421AA3000E53A5A /* Main.storyboard */,
+				BAB712AC2421AA3000E53A5A /* Home.swift */,
+				BAB712AD2421AA3000E53A5A /* Home.storyboard */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -506,7 +506,7 @@
 				BAB712B32421AA3000E53A5A /* LaunchScreen.storyboard in Resources */,
 				BAB712EE2421AAFD00E53A5A /* Prompt-Bold.ttf in Resources */,
 				BAB712E72421AAFD00E53A5A /* Prompt-MediumItalic.ttf in Resources */,
-				BAB712BD2421AA3000E53A5A /* Main.storyboard in Resources */,
+				BAB712BD2421AA3000E53A5A /* Home.storyboard in Resources */,
 				BAB712F82421AAFD00E53A5A /* Roboto-Light.ttf in Resources */,
 				BAB712F02421AAFD00E53A5A /* Prompt-Regular.ttf in Resources */,
 				BAB712ED2421AAFD00E53A5A /* Prompt-LightItalic.ttf in Resources */,
@@ -640,7 +640,7 @@
 				BAB712BB2421AA3000E53A5A /* Colors.swift in Sources */,
 				BAB712B82421AA3000E53A5A /* Storyboards.swift in Sources */,
 				BAB712BA2421AA3000E53A5A /* Images.swift in Sources */,
-				BAB712BC2421AA3000E53A5A /* ViewController.swift in Sources */,
+				BAB712BC2421AA3000E53A5A /* Home.swift in Sources */,
 				BAB712B52421AA3000E53A5A /* Strings.swift in Sources */,
 				BA4B8B5A2421A5CF0073A65E /* AppDelegate.swift in Sources */,
 			);

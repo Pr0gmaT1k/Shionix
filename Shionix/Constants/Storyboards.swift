@@ -12,15 +12,15 @@ import UIKit
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardScene {
+  internal enum Home: StoryboardType {
+    internal static let storyboardName = "Home"
+
+    internal static let initialScene = InitialSceneType<Shionix.HomeVC>(storyboard: Home.self)
+  }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"
 
     internal static let initialScene = InitialSceneType<UIKit.UIViewController>(storyboard: LaunchScreen.self)
-  }
-  internal enum Main: StoryboardType {
-    internal static let storyboardName = "Main"
-
-    internal static let initialScene = InitialSceneType<Shionix.ViewController>(storyboard: Main.self)
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
