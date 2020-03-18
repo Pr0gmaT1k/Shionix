@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B218FD0883DE065527B6F04A /* Pods_Shionix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56B02C87B0DD30644E46AEE /* Pods_Shionix.framework */; };
+		BA4B8B5A2421A5CF0073A65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4B8B592421A5CF0073A65E /* AppDelegate.swift */; };
+		BA4B8B712421A5D10073A65E /* ShionixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4B8B702421A5D10073A65E /* ShionixTests.swift */; };
+		BA4B8B7C2421A5D10073A65E /* ShionixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4B8B7B2421A5D10073A65E /* ShionixUITests.swift */; };
+		BAB712B22421AA3000E53A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB7129D2421AA3000E53A5A /* Assets.xcassets */; };
+		BAB712B32421AA3000E53A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB7129E2421AA3000E53A5A /* LaunchScreen.storyboard */; };
+		BAB712B52421AA3000E53A5A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712A42421AA3000E53A5A /* Strings.swift */; };
+		BAB712B62421AA3000E53A5A /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = BAB712A52421AA3000E53A5A /* Colors.txt */; };
+		BAB712B72421AA3000E53A5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAB712A62421AA3000E53A5A /* Localizable.strings */; };
+		BAB712B82421AA3000E53A5A /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712A72421AA3000E53A5A /* Storyboards.swift */; };
+		BAB712B92421AA3000E53A5A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712A82421AA3000E53A5A /* Fonts.swift */; };
+		BAB712BA2421AA3000E53A5A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712A92421AA3000E53A5A /* Images.swift */; };
+		BAB712BB2421AA3000E53A5A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712AA2421AA3000E53A5A /* Colors.swift */; };
+		BAB712BC2421AA3000E53A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712AC2421AA3000E53A5A /* ViewController.swift */; };
+		BAB712BD2421AA3000E53A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB712AD2421AA3000E53A5A /* Main.storyboard */; };
+		BAB712BE2421AA3000E53A5A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712B02421AA3000E53A5A /* Environment.swift */; };
+		BAB712E42421AAFD00E53A5A /* Prompt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C32421AAFD00E53A5A /* Prompt-ThinItalic.ttf */; };
+		BAB712E52421AAFD00E53A5A /* Prompt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C42421AAFD00E53A5A /* Prompt-BlackItalic.ttf */; };
+		BAB712E62421AAFD00E53A5A /* Prompt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C52421AAFD00E53A5A /* Prompt-ExtraLight.ttf */; };
+		BAB712E72421AAFD00E53A5A /* Prompt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C62421AAFD00E53A5A /* Prompt-MediumItalic.ttf */; };
+		BAB712E82421AAFD00E53A5A /* Prompt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C72421AAFD00E53A5A /* Prompt-BoldItalic.ttf */; };
+		BAB712E92421AAFD00E53A5A /* Prompt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C82421AAFD00E53A5A /* Prompt-Medium.ttf */; };
+		BAB712EA2421AAFD00E53A5A /* Prompt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712C92421AAFD00E53A5A /* Prompt-Light.ttf */; };
+		BAB712EB2421AAFD00E53A5A /* Prompt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712CA2421AAFD00E53A5A /* Prompt-ExtraBold.ttf */; };
+		BAB712EC2421AAFD00E53A5A /* Prompt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712CB2421AAFD00E53A5A /* Prompt-Thin.ttf */; };
+		BAB712ED2421AAFD00E53A5A /* Prompt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712CC2421AAFD00E53A5A /* Prompt-LightItalic.ttf */; };
+		BAB712EE2421AAFD00E53A5A /* Prompt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712CD2421AAFD00E53A5A /* Prompt-Bold.ttf */; };
+		BAB712EF2421AAFD00E53A5A /* Prompt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712CE2421AAFD00E53A5A /* Prompt-SemiBold.ttf */; };
+		BAB712F02421AAFD00E53A5A /* Prompt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712CF2421AAFD00E53A5A /* Prompt-Regular.ttf */; };
+		BAB712F12421AAFD00E53A5A /* Prompt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D02421AAFD00E53A5A /* Prompt-ExtraLightItalic.ttf */; };
+		BAB712F22421AAFD00E53A5A /* Prompt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D12421AAFD00E53A5A /* Prompt-SemiBoldItalic.ttf */; };
+		BAB712F32421AAFD00E53A5A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D22421AAFD00E53A5A /* OFL.txt */; };
+		BAB712F42421AAFD00E53A5A /* Prompt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D32421AAFD00E53A5A /* Prompt-ExtraBoldItalic.ttf */; };
+		BAB712F52421AAFD00E53A5A /* Prompt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D42421AAFD00E53A5A /* Prompt-Italic.ttf */; };
+		BAB712F62421AAFD00E53A5A /* Prompt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D52421AAFD00E53A5A /* Prompt-Black.ttf */; };
+		BAB712F72421AAFD00E53A5A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D72421AAFD00E53A5A /* Roboto-Medium.ttf */; };
+		BAB712F82421AAFD00E53A5A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D82421AAFD00E53A5A /* Roboto-Light.ttf */; };
+		BAB712F92421AAFD00E53A5A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712D92421AAFD00E53A5A /* Roboto-Regular.ttf */; };
+		BAB712FA2421AAFD00E53A5A /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712DA2421AAFD00E53A5A /* Roboto-MediumItalic.ttf */; };
+		BAB712FB2421AAFD00E53A5A /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712DB2421AAFD00E53A5A /* Roboto-ThinItalic.ttf */; };
+		BAB712FC2421AAFD00E53A5A /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712DC2421AAFD00E53A5A /* Roboto-BoldItalic.ttf */; };
+		BAB712FD2421AAFD00E53A5A /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712DD2421AAFD00E53A5A /* Roboto-LightItalic.ttf */; };
+		BAB712FE2421AAFD00E53A5A /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712DE2421AAFD00E53A5A /* Roboto-Italic.ttf */; };
+		BAB712FF2421AAFD00E53A5A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = BAB712DF2421AAFD00E53A5A /* LICENSE.txt */; };
+		BAB713002421AAFD00E53A5A /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712E02421AAFD00E53A5A /* Roboto-BlackItalic.ttf */; };
+		BAB713012421AAFD00E53A5A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712E12421AAFD00E53A5A /* Roboto-Bold.ttf */; };
+		BAB713022421AAFD00E53A5A /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712E22421AAFD00E53A5A /* Roboto-Thin.ttf */; };
+		BAB713032421AAFD00E53A5A /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB712E32421AAFD00E53A5A /* Roboto-Black.ttf */; };
+		CAFBF7CC423539F3C07B8D7A /* Pods_ShionixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB89DD762F9324150602663 /* Pods_ShionixTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA4B8B6D2421A5D10073A65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA4B8B4E2421A5CF0073A65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4B8B552421A5CF0073A65E;
+			remoteInfo = Shionix;
+		};
+		BA4B8B782421A5D10073A65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA4B8B4E2421A5CF0073A65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4B8B552421A5CF0073A65E;
+			remoteInfo = Shionix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40C5129BFEA589144F196D38 /* Pods-Shionix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shionix.release.xcconfig"; path = "Target Support Files/Pods-Shionix/Pods-Shionix.release.xcconfig"; sourceTree = "<group>"; };
+		4F379140178CF1867867012E /* Pods-Shionix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shionix.debug.xcconfig"; path = "Target Support Files/Pods-Shionix/Pods-Shionix.debug.xcconfig"; sourceTree = "<group>"; };
+		6B9894F34317D11567481D43 /* Pods-ShionixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShionixTests.debug.xcconfig"; path = "Target Support Files/Pods-ShionixTests/Pods-ShionixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DB89DD762F9324150602663 /* Pods_ShionixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShionixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56B02C87B0DD30644E46AEE /* Pods_Shionix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shionix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4B8B562421A5CF0073A65E /* Shionix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shionix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4B8B592421A5CF0073A65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA4B8B6C2421A5D10073A65E /* ShionixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShionixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4B8B702421A5D10073A65E /* ShionixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShionixTests.swift; sourceTree = "<group>"; };
+		BA4B8B722421A5D10073A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4B8B772421A5D10073A65E /* ShionixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShionixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4B8B7B2421A5D10073A65E /* ShionixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShionixUITests.swift; sourceTree = "<group>"; };
+		BA4B8B7D2421A5D10073A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB7129D2421AA3000E53A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAB7129F2421AA3000E53A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAB712A02421AA3000E53A5A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB712A42421AA3000E53A5A /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		BAB712A52421AA3000E53A5A /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		BAB712A62421AA3000E53A5A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BAB712A72421AA3000E53A5A /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		BAB712A82421AA3000E53A5A /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		BAB712A92421AA3000E53A5A /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		BAB712AA2421AA3000E53A5A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BAB712AC2421AA3000E53A5A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAB712AD2421AA3000E53A5A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BAB712B02421AA3000E53A5A /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		BAB712C32421AAFD00E53A5A /* Prompt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BAB712C42421AAFD00E53A5A /* Prompt-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BAB712C52421AAFD00E53A5A /* Prompt-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BAB712C62421AAFD00E53A5A /* Prompt-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BAB712C72421AAFD00E53A5A /* Prompt-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BAB712C82421AAFD00E53A5A /* Prompt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Medium.ttf"; sourceTree = "<group>"; };
+		BAB712C92421AAFD00E53A5A /* Prompt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Light.ttf"; sourceTree = "<group>"; };
+		BAB712CA2421AAFD00E53A5A /* Prompt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BAB712CB2421AAFD00E53A5A /* Prompt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Thin.ttf"; sourceTree = "<group>"; };
+		BAB712CC2421AAFD00E53A5A /* Prompt-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-LightItalic.ttf"; sourceTree = "<group>"; };
+		BAB712CD2421AAFD00E53A5A /* Prompt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Bold.ttf"; sourceTree = "<group>"; };
+		BAB712CE2421AAFD00E53A5A /* Prompt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-SemiBold.ttf"; sourceTree = "<group>"; };
+		BAB712CF2421AAFD00E53A5A /* Prompt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Regular.ttf"; sourceTree = "<group>"; };
+		BAB712D02421AAFD00E53A5A /* Prompt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		BAB712D12421AAFD00E53A5A /* Prompt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BAB712D22421AAFD00E53A5A /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		BAB712D32421AAFD00E53A5A /* Prompt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		BAB712D42421AAFD00E53A5A /* Prompt-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Italic.ttf"; sourceTree = "<group>"; };
+		BAB712D52421AAFD00E53A5A /* Prompt-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Black.ttf"; sourceTree = "<group>"; };
+		BAB712D72421AAFD00E53A5A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		BAB712D82421AAFD00E53A5A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		BAB712D92421AAFD00E53A5A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		BAB712DA2421AAFD00E53A5A /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BAB712DB2421AAFD00E53A5A /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BAB712DC2421AAFD00E53A5A /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BAB712DD2421AAFD00E53A5A /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		BAB712DE2421AAFD00E53A5A /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		BAB712DF2421AAFD00E53A5A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		BAB712E02421AAFD00E53A5A /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BAB712E12421AAFD00E53A5A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		BAB712E22421AAFD00E53A5A /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		BAB712E32421AAFD00E53A5A /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		E2695393853BD2CE9040BEEF /* Pods-ShionixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShionixTests.release.xcconfig"; path = "Target Support Files/Pods-ShionixTests/Pods-ShionixTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA4B8B532421A5CF0073A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B218FD0883DE065527B6F04A /* Pods_Shionix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4B8B692421A5D10073A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFBF7CC423539F3C07B8D7A /* Pods_ShionixTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4B8B742421A5D10073A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39B1183CC28C59367E08FD7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A56B02C87B0DD30644E46AEE /* Pods_Shionix.framework */,
+				6DB89DD762F9324150602663 /* Pods_ShionixTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D32BC92D79041107F03C4E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F379140178CF1867867012E /* Pods-Shionix.debug.xcconfig */,
+				40C5129BFEA589144F196D38 /* Pods-Shionix.release.xcconfig */,
+				6B9894F34317D11567481D43 /* Pods-ShionixTests.debug.xcconfig */,
+				E2695393853BD2CE9040BEEF /* Pods-ShionixTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA4B8B4D2421A5CF0073A65E = {
+			isa = PBXGroup;
+			children = (
+				BA4B8B582421A5CF0073A65E /* Shionix */,
+				BA4B8B6F2421A5D10073A65E /* ShionixTests */,
+				BA4B8B7A2421A5D10073A65E /* ShionixUITests */,
+				BA4B8B572421A5CF0073A65E /* Products */,
+				7D32BC92D79041107F03C4E6 /* Pods */,
+				39B1183CC28C59367E08FD7E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA4B8B572421A5CF0073A65E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA4B8B562421A5CF0073A65E /* Shionix.app */,
+				BA4B8B6C2421A5D10073A65E /* ShionixTests.xctest */,
+				BA4B8B772421A5D10073A65E /* ShionixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA4B8B582421A5CF0073A65E /* Shionix */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712A32421AA3000E53A5A /* Constants */,
+				BAB712A22421AA3000E53A5A /* Coordination */,
+				BAB712AE2421AA3000E53A5A /* Environments */,
+				BAB712B12421AA3000E53A5A /* Models */,
+				BAB712AB2421AA3000E53A5A /* Module */,
+				BAB7129C2421AA3000E53A5A /* Ressources */,
+				BAB712A12421AA3000E53A5A /* Services */,
+				BA4B8B592421A5CF0073A65E /* AppDelegate.swift */,
+			);
+			path = Shionix;
+			sourceTree = "<group>";
+		};
+		BA4B8B6F2421A5D10073A65E /* ShionixTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA4B8B702421A5D10073A65E /* ShionixTests.swift */,
+				BA4B8B722421A5D10073A65E /* Info.plist */,
+			);
+			path = ShionixTests;
+			sourceTree = "<group>";
+		};
+		BA4B8B7A2421A5D10073A65E /* ShionixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA4B8B7B2421A5D10073A65E /* ShionixUITests.swift */,
+				BA4B8B7D2421A5D10073A65E /* Info.plist */,
+			);
+			path = ShionixUITests;
+			sourceTree = "<group>";
+		};
+		BAB7129C2421AA3000E53A5A /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712C12421AAFD00E53A5A /* Fonts */,
+				BAB7129D2421AA3000E53A5A /* Assets.xcassets */,
+				BAB7129E2421AA3000E53A5A /* LaunchScreen.storyboard */,
+				BAB712A02421AA3000E53A5A /* Info.plist */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		BAB712A12421AA3000E53A5A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BAB712A22421AA3000E53A5A /* Coordination */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordination;
+			sourceTree = "<group>";
+		};
+		BAB712A32421AA3000E53A5A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712A42421AA3000E53A5A /* Strings.swift */,
+				BAB712A52421AA3000E53A5A /* Colors.txt */,
+				BAB712A62421AA3000E53A5A /* Localizable.strings */,
+				BAB712A72421AA3000E53A5A /* Storyboards.swift */,
+				BAB712A82421AA3000E53A5A /* Fonts.swift */,
+				BAB712A92421AA3000E53A5A /* Images.swift */,
+				BAB712AA2421AA3000E53A5A /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BAB712AB2421AA3000E53A5A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712AC2421AA3000E53A5A /* ViewController.swift */,
+				BAB712AD2421AA3000E53A5A /* Main.storyboard */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BAB712AE2421AA3000E53A5A /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712AF2421AA3000E53A5A /* dev */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		BAB712AF2421AA3000E53A5A /* dev */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712B02421AA3000E53A5A /* Environment.swift */,
+			);
+			path = dev;
+			sourceTree = "<group>";
+		};
+		BAB712B12421AA3000E53A5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BAB712C12421AAFD00E53A5A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712C22421AAFD00E53A5A /* Prompt */,
+				BAB712D62421AAFD00E53A5A /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BAB712C22421AAFD00E53A5A /* Prompt */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712C32421AAFD00E53A5A /* Prompt-ThinItalic.ttf */,
+				BAB712C42421AAFD00E53A5A /* Prompt-BlackItalic.ttf */,
+				BAB712C52421AAFD00E53A5A /* Prompt-ExtraLight.ttf */,
+				BAB712C62421AAFD00E53A5A /* Prompt-MediumItalic.ttf */,
+				BAB712C72421AAFD00E53A5A /* Prompt-BoldItalic.ttf */,
+				BAB712C82421AAFD00E53A5A /* Prompt-Medium.ttf */,
+				BAB712C92421AAFD00E53A5A /* Prompt-Light.ttf */,
+				BAB712CA2421AAFD00E53A5A /* Prompt-ExtraBold.ttf */,
+				BAB712CB2421AAFD00E53A5A /* Prompt-Thin.ttf */,
+				BAB712CC2421AAFD00E53A5A /* Prompt-LightItalic.ttf */,
+				BAB712CD2421AAFD00E53A5A /* Prompt-Bold.ttf */,
+				BAB712CE2421AAFD00E53A5A /* Prompt-SemiBold.ttf */,
+				BAB712CF2421AAFD00E53A5A /* Prompt-Regular.ttf */,
+				BAB712D02421AAFD00E53A5A /* Prompt-ExtraLightItalic.ttf */,
+				BAB712D12421AAFD00E53A5A /* Prompt-SemiBoldItalic.ttf */,
+				BAB712D22421AAFD00E53A5A /* OFL.txt */,
+				BAB712D32421AAFD00E53A5A /* Prompt-ExtraBoldItalic.ttf */,
+				BAB712D42421AAFD00E53A5A /* Prompt-Italic.ttf */,
+				BAB712D52421AAFD00E53A5A /* Prompt-Black.ttf */,
+			);
+			path = Prompt;
+			sourceTree = "<group>";
+		};
+		BAB712D62421AAFD00E53A5A /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				BAB712D72421AAFD00E53A5A /* Roboto-Medium.ttf */,
+				BAB712D82421AAFD00E53A5A /* Roboto-Light.ttf */,
+				BAB712D92421AAFD00E53A5A /* Roboto-Regular.ttf */,
+				BAB712DA2421AAFD00E53A5A /* Roboto-MediumItalic.ttf */,
+				BAB712DB2421AAFD00E53A5A /* Roboto-ThinItalic.ttf */,
+				BAB712DC2421AAFD00E53A5A /* Roboto-BoldItalic.ttf */,
+				BAB712DD2421AAFD00E53A5A /* Roboto-LightItalic.ttf */,
+				BAB712DE2421AAFD00E53A5A /* Roboto-Italic.ttf */,
+				BAB712DF2421AAFD00E53A5A /* LICENSE.txt */,
+				BAB712E02421AAFD00E53A5A /* Roboto-BlackItalic.ttf */,
+				BAB712E12421AAFD00E53A5A /* Roboto-Bold.ttf */,
+				BAB712E22421AAFD00E53A5A /* Roboto-Thin.ttf */,
+				BAB712E32421AAFD00E53A5A /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA4B8B552421A5CF0073A65E /* Shionix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4B8B802421A5D10073A65E /* Build configuration list for PBXNativeTarget "Shionix" */;
+			buildPhases = (
+				B7D07B1DD09E53D5E753B170 /* [CP] Check Pods Manifest.lock */,
+				BAB7129B2421A69400E53A5A /* SwiftGen */,
+				BA4B8B522421A5CF0073A65E /* Sources */,
+				BA4B8B532421A5CF0073A65E /* Frameworks */,
+				BA4B8B542421A5CF0073A65E /* Resources */,
+				AB3706D0B6E0699F2144529D /* [CP] Embed Pods Frameworks */,
+				BAB712C02421AA8500E53A5A /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shionix;
+			productName = Shionix;
+			productReference = BA4B8B562421A5CF0073A65E /* Shionix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA4B8B6B2421A5D10073A65E /* ShionixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4B8B832421A5D10073A65E /* Build configuration list for PBXNativeTarget "ShionixTests" */;
+			buildPhases = (
+				B48F4536C02CD58DD393576F /* [CP] Check Pods Manifest.lock */,
+				BA4B8B682421A5D10073A65E /* Sources */,
+				BA4B8B692421A5D10073A65E /* Frameworks */,
+				BA4B8B6A2421A5D10073A65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA4B8B6E2421A5D10073A65E /* PBXTargetDependency */,
+			);
+			name = ShionixTests;
+			productName = ShionixTests;
+			productReference = BA4B8B6C2421A5D10073A65E /* ShionixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA4B8B762421A5D10073A65E /* ShionixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4B8B862421A5D10073A65E /* Build configuration list for PBXNativeTarget "ShionixUITests" */;
+			buildPhases = (
+				BA4B8B732421A5D10073A65E /* Sources */,
+				BA4B8B742421A5D10073A65E /* Frameworks */,
+				BA4B8B752421A5D10073A65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA4B8B792421A5D10073A65E /* PBXTargetDependency */,
+			);
+			name = ShionixUITests;
+			productName = ShionixUITests;
+			productReference = BA4B8B772421A5D10073A65E /* ShionixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA4B8B4E2421A5CF0073A65E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = azerty;
+				TargetAttributes = {
+					BA4B8B552421A5CF0073A65E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BA4B8B6B2421A5D10073A65E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BA4B8B552421A5CF0073A65E;
+					};
+					BA4B8B762421A5D10073A65E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BA4B8B552421A5CF0073A65E;
+					};
+				};
+			};
+			buildConfigurationList = BA4B8B512421A5CF0073A65E /* Build configuration list for PBXProject "Shionix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA4B8B4D2421A5CF0073A65E;
+			productRefGroup = BA4B8B572421A5CF0073A65E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA4B8B552421A5CF0073A65E /* Shionix */,
+				BA4B8B6B2421A5D10073A65E /* ShionixTests */,
+				BA4B8B762421A5D10073A65E /* ShionixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA4B8B542421A5CF0073A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB712FF2421AAFD00E53A5A /* LICENSE.txt in Resources */,
+				BAB712FD2421AAFD00E53A5A /* Roboto-LightItalic.ttf in Resources */,
+				BAB712F52421AAFD00E53A5A /* Prompt-Italic.ttf in Resources */,
+				BAB713032421AAFD00E53A5A /* Roboto-Black.ttf in Resources */,
+				BAB712F42421AAFD00E53A5A /* Prompt-ExtraBoldItalic.ttf in Resources */,
+				BAB712F32421AAFD00E53A5A /* OFL.txt in Resources */,
+				BAB712B72421AA3000E53A5A /* Localizable.strings in Resources */,
+				BAB712FE2421AAFD00E53A5A /* Roboto-Italic.ttf in Resources */,
+				BAB713012421AAFD00E53A5A /* Roboto-Bold.ttf in Resources */,
+				BAB713022421AAFD00E53A5A /* Roboto-Thin.ttf in Resources */,
+				BAB712FA2421AAFD00E53A5A /* Roboto-MediumItalic.ttf in Resources */,
+				BAB712E42421AAFD00E53A5A /* Prompt-ThinItalic.ttf in Resources */,
+				BAB712FB2421AAFD00E53A5A /* Roboto-ThinItalic.ttf in Resources */,
+				BAB712F72421AAFD00E53A5A /* Roboto-Medium.ttf in Resources */,
+				BAB712F92421AAFD00E53A5A /* Roboto-Regular.ttf in Resources */,
+				BAB712B22421AA3000E53A5A /* Assets.xcassets in Resources */,
+				BAB712E52421AAFD00E53A5A /* Prompt-BlackItalic.ttf in Resources */,
+				BAB712E62421AAFD00E53A5A /* Prompt-ExtraLight.ttf in Resources */,
+				BAB712F22421AAFD00E53A5A /* Prompt-SemiBoldItalic.ttf in Resources */,
+				BAB712EC2421AAFD00E53A5A /* Prompt-Thin.ttf in Resources */,
+				BAB712E92421AAFD00E53A5A /* Prompt-Medium.ttf in Resources */,
+				BAB712E82421AAFD00E53A5A /* Prompt-BoldItalic.ttf in Resources */,
+				BAB713002421AAFD00E53A5A /* Roboto-BlackItalic.ttf in Resources */,
+				BAB712EA2421AAFD00E53A5A /* Prompt-Light.ttf in Resources */,
+				BAB712EB2421AAFD00E53A5A /* Prompt-ExtraBold.ttf in Resources */,
+				BAB712FC2421AAFD00E53A5A /* Roboto-BoldItalic.ttf in Resources */,
+				BAB712EF2421AAFD00E53A5A /* Prompt-SemiBold.ttf in Resources */,
+				BAB712F12421AAFD00E53A5A /* Prompt-ExtraLightItalic.ttf in Resources */,
+				BAB712F62421AAFD00E53A5A /* Prompt-Black.ttf in Resources */,
+				BAB712B32421AA3000E53A5A /* LaunchScreen.storyboard in Resources */,
+				BAB712EE2421AAFD00E53A5A /* Prompt-Bold.ttf in Resources */,
+				BAB712E72421AAFD00E53A5A /* Prompt-MediumItalic.ttf in Resources */,
+				BAB712BD2421AA3000E53A5A /* Main.storyboard in Resources */,
+				BAB712F82421AAFD00E53A5A /* Roboto-Light.ttf in Resources */,
+				BAB712F02421AAFD00E53A5A /* Prompt-Regular.ttf in Resources */,
+				BAB712ED2421AAFD00E53A5A /* Prompt-LightItalic.ttf in Resources */,
+				BAB712B62421AA3000E53A5A /* Colors.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4B8B6A2421A5D10073A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4B8B752421A5D10073A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB3706D0B6E0699F2144529D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shionix/Pods-Shionix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shionix/Pods-Shionix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shionix/Pods-Shionix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B48F4536C02CD58DD393576F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShionixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D07B1DD09E53D5E753B170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shionix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB7129B2421A69400E53A5A /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SRCDIR=\"$PROJECT_DIR/Shionix\"\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards -t scenes-swift4 \"$SRCDIR\" --output \"$SRCDIR/Constants/Storyboards.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets -t swift4 \"$SRCDIR/Ressources/Assets.xcassets\" --output \"$SRCDIR/Constants/Images.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen strings -t structured-swift4 \"$SRCDIR/Constants/Localizable.strings\" --output \"$SRCDIR/Constants/Strings.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen colors -t swift4 \"$SRCDIR/Constants/Colors.txt\" --output \"$SRCDIR/Constants/Colors.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen fonts -t swift4 \"$SRCDIR/Ressources/Fonts\" --output \"$SRCDIR/Constants/Fonts.swift\"\n";
+		};
+		BAB712C02421AA8500E53A5A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA4B8B522421A5CF0073A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB712B92421AA3000E53A5A /* Fonts.swift in Sources */,
+				BAB712BE2421AA3000E53A5A /* Environment.swift in Sources */,
+				BAB712BB2421AA3000E53A5A /* Colors.swift in Sources */,
+				BAB712B82421AA3000E53A5A /* Storyboards.swift in Sources */,
+				BAB712BA2421AA3000E53A5A /* Images.swift in Sources */,
+				BAB712BC2421AA3000E53A5A /* ViewController.swift in Sources */,
+				BAB712B52421AA3000E53A5A /* Strings.swift in Sources */,
+				BA4B8B5A2421A5CF0073A65E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4B8B682421A5D10073A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4B8B712421A5D10073A65E /* ShionixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4B8B732421A5D10073A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4B8B7C2421A5D10073A65E /* ShionixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA4B8B6E2421A5D10073A65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA4B8B552421A5CF0073A65E /* Shionix */;
+			targetProxy = BA4B8B6D2421A5D10073A65E /* PBXContainerItemProxy */;
+		};
+		BA4B8B792421A5D10073A65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA4B8B552421A5CF0073A65E /* Shionix */;
+			targetProxy = BA4B8B782421A5D10073A65E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAB7129E2421AA3000E53A5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAB7129F2421AA3000E53A5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA4B8B7E2421A5D10073A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA4B8B7F2421A5D10073A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA4B8B812421A5D10073A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F379140178CF1867867012E /* Pods-Shionix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Shionix/Ressources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerty.Shionix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA4B8B822421A5D10073A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40C5129BFEA589144F196D38 /* Pods-Shionix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Shionix/Ressources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerty.Shionix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA4B8B842421A5D10073A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9894F34317D11567481D43 /* Pods-ShionixTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShionixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerty.ShionixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shionix.app/Shionix";
+			};
+			name = Debug;
+		};
+		BA4B8B852421A5D10073A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2695393853BD2CE9040BEEF /* Pods-ShionixTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShionixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerty.ShionixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shionix.app/Shionix";
+			};
+			name = Release;
+		};
+		BA4B8B872421A5D10073A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShionixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerty.ShionixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shionix;
+			};
+			name = Debug;
+		};
+		BA4B8B882421A5D10073A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShionixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerty.ShionixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shionix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA4B8B512421A5CF0073A65E /* Build configuration list for PBXProject "Shionix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4B8B7E2421A5D10073A65E /* Debug */,
+				BA4B8B7F2421A5D10073A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA4B8B802421A5D10073A65E /* Build configuration list for PBXNativeTarget "Shionix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4B8B812421A5D10073A65E /* Debug */,
+				BA4B8B822421A5D10073A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA4B8B832421A5D10073A65E /* Build configuration list for PBXNativeTarget "ShionixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4B8B842421A5D10073A65E /* Debug */,
+				BA4B8B852421A5D10073A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA4B8B862421A5D10073A65E /* Build configuration list for PBXNativeTarget "ShionixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4B8B872421A5D10073A65E /* Debug */,
+				BA4B8B882421A5D10073A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA4B8B4E2421A5CF0073A65E /* Project object */;
+}
