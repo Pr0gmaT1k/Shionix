@@ -57,6 +57,11 @@
 		BAB713052421C54B00E53A5A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB713042421C54B00E53A5A /* Home.storyboard */; };
 		BAB7130A24225B8000E53A5A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7130824225B8000E53A5A /* MenuView.swift */; };
 		BAB7130B24225B8000E53A5A /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAB7130924225B8000E53A5A /* MenuView.xib */; };
+		BAB7130D24226C1700E53A5A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7130C24226C1700E53A5A /* MenuItem.swift */; };
+		BAB7130F24226C9E00E53A5A /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7130E24226C9E00E53A5A /* AppVersion.swift */; };
+		BAB7131224226D9A00E53A5A /* MyJsonProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7131124226D9A00E53A5A /* MyJsonProvider.swift */; };
+		BAB7131424226EED00E53A5A /* MyJsonWSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7131324226EED00E53A5A /* MyJsonWSClient.swift */; };
+		BAB713172422702700E53A5A /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB713162422702700E53A5A /* String+Error.swift */; };
 		CAFBF7CC423539F3C07B8D7A /* Pods_ShionixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB89DD762F9324150602663 /* Pods_ShionixTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +143,11 @@
 		BAB713042421C54B00E53A5A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BAB7130824225B8000E53A5A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BAB7130924225B8000E53A5A /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		BAB7130C24226C1700E53A5A /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		BAB7130E24226C9E00E53A5A /* AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		BAB7131124226D9A00E53A5A /* MyJsonProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJsonProvider.swift; sourceTree = "<group>"; };
+		BAB7131324226EED00E53A5A /* MyJsonWSClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJsonWSClient.swift; sourceTree = "<group>"; };
+		BAB713162422702700E53A5A /* String+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
 		E2695393853BD2CE9040BEEF /* Pods-ShionixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShionixTests.release.xcconfig"; path = "Target Support Files/Pods-ShionixTests/Pods-ShionixTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +223,7 @@
 		BA4B8B582421A5CF0073A65E /* Shionix */ = {
 			isa = PBXGroup;
 			children = (
+				BAB713152422700600E53A5A /* Extentions */,
 				BAB712A32421AA3000E53A5A /* Constants */,
 				BAB712A22421AA3000E53A5A /* Coordination */,
 				BAB712AE2421AA3000E53A5A /* Environments */,
@@ -257,6 +268,7 @@
 		BAB712A12421AA3000E53A5A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BAB7131024226D6900E53A5A /* MyJson */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -293,22 +305,16 @@
 		BAB712AE2421AA3000E53A5A /* Environments */ = {
 			isa = PBXGroup;
 			children = (
-				BAB712AF2421AA3000E53A5A /* dev */,
-			);
-			path = Environments;
-			sourceTree = "<group>";
-		};
-		BAB712AF2421AA3000E53A5A /* dev */ = {
-			isa = PBXGroup;
-			children = (
+				BAB7130E24226C9E00E53A5A /* AppVersion.swift */,
 				BAB712B02421AA3000E53A5A /* Environment.swift */,
 			);
-			path = dev;
+			path = Environments;
 			sourceTree = "<group>";
 		};
 		BAB712B12421AA3000E53A5A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BAB7130C24226C1700E53A5A /* MenuItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -385,6 +391,23 @@
 				BAB7130924225B8000E53A5A /* MenuView.xib */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		BAB7131024226D6900E53A5A /* MyJson */ = {
+			isa = PBXGroup;
+			children = (
+				BAB7131124226D9A00E53A5A /* MyJsonProvider.swift */,
+				BAB7131324226EED00E53A5A /* MyJsonWSClient.swift */,
+			);
+			path = MyJson;
+			sourceTree = "<group>";
+		};
+		BAB713152422700600E53A5A /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				BAB713162422702700E53A5A /* String+Error.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAB712B92421AA3000E53A5A /* Fonts.swift in Sources */,
+				BAB713172422702700E53A5A /* String+Error.swift in Sources */,
 				BAB712BE2421AA3000E53A5A /* Environment.swift in Sources */,
 				BAB712BB2421AA3000E53A5A /* Colors.swift in Sources */,
 				BAB712B82421AA3000E53A5A /* Storyboards.swift in Sources */,
@@ -667,6 +691,10 @@
 				BAB712BC2421AA3000E53A5A /* HomeVC.swift in Sources */,
 				BAB712B52421AA3000E53A5A /* Strings.swift in Sources */,
 				BA4B8B5A2421A5CF0073A65E /* AppDelegate.swift in Sources */,
+				BAB7130D24226C1700E53A5A /* MenuItem.swift in Sources */,
+				BAB7131424226EED00E53A5A /* MyJsonWSClient.swift in Sources */,
+				BAB7131224226D9A00E53A5A /* MyJsonProvider.swift in Sources */,
+				BAB7130F24226C9E00E53A5A /* AppVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,9 +10,16 @@ import UIKit
 import Reusable
 
 final class MenuView: UIView, NibOwnerLoadable {
+    // IBOutlets
+    
+    
     // MARK:- Funcs
     required init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
       self.loadNibContent()
+    }
+    
+    func fill(items: [[MenuItem]]) {
+        
     }
 }

@@ -110,6 +110,7 @@
                         <viewLayoutGuide key="safeArea" id="J2D-Ck-YN0"/>
                     </view>
                     <connections>
+                        <outlet property="menuView" destination="LlM-8p-F3d" id="mAM-Vd-e8b"/>
                         <outlet property="nombreLabel" destination="wr7-lB-PC2" id="Jun-Ib-ccf"/>
                         <outlet property="versionLabel" destination="KYX-cY-Etk" id="Cqv-UY-o0l"/>
                         <outlet property="welcomeLabel" destination="0Xb-3h-oV0" id="HR4-Vr-Ktl"/>
