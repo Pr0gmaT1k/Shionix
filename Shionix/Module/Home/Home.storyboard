@@ -7,8 +7,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Roboto-Regular.ttf">
-            <string>Roboto-Regular</string>
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -128,7 +128,7 @@
         <!--SearchVC-->
         <scene sceneID="Zhh-zi-l3o">
             <objects>
-                <viewController storyboardIdentifier="SearchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2dw-1b-sZC" customClass="SearchVC" customModule="TVSenado" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2dw-1b-sZC" customClass="SearchVC" customModule="Shionix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u8I-da-sP3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,8 +137,8 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TM4-9x-JYF">
-                                        <rect key="frame" x="185.5" y="0.0" width="43" height="44"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <rect key="frame" x="175.5" y="0.0" width="63" height="44"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -196,7 +196,7 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rnq-xl-VVD">
                                 <rect key="frame" x="0.0" y="143" width="414" height="753"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vF-EC-coB">
                                 <rect key="frame" x="16" y="448" width="382" height="0.0"/>
@@ -224,6 +224,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D5H-bX-gbk"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="BKJ-nO-gjr" id="ZRb-9P-1Gy"/>
+                        <outlet property="tableView" destination="Rnq-xl-VVD" id="zLw-68-bi3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8A-1d-hFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

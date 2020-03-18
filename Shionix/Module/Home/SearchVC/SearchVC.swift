@@ -14,9 +14,12 @@ protocol SearchVCDelegate: class {
 
 final class SearchVC: UIViewController {
     // MARK:- IBOutlets
+    @IBOutlet private weak var searchBar: UISearchBar!
+    @IBOutlet private weak var tableView: UITableView!
     
     // MARK:- Properties
     weak var delegate: SearchVCDelegate?
+    private var source = [String]()
     
     @IBAction func tapBack(_ sender: Any) {
         delegate?.didTapBack()
@@ -25,5 +28,20 @@ final class SearchVC: UIViewController {
     // MARK:- Funcs
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(cellType: SearchTVC.self)
+    }
+}
+
+// MARK:- UITableView Delegate & DataSource
+extension SearchVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(for: indexPath) as SearchTVC
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
     }
 }

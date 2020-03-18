@@ -19,6 +19,8 @@
 		BA8EEF572422912E00635996 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF542422912D00635996 /* Coordinator.swift */; };
 		BA8EEF582422912E00635996 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF552422912E00635996 /* Navigator.swift */; };
 		BA8EEF5A242291BC00635996 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF59242291BC00635996 /* HomeCoordinator.swift */; };
+		BA8EEF5E242299A000635996 /* SearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF5C242299A000635996 /* SearchTVC.swift */; };
+		BA8EEF5F242299A000635996 /* SearchTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8EEF5D242299A000635996 /* SearchTVC.xib */; };
 		BAB712B22421AA3000E53A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB7129D2421AA3000E53A5A /* Assets.xcassets */; };
 		BAB712B32421AA3000E53A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB7129E2421AA3000E53A5A /* LaunchScreen.storyboard */; };
 		BAB712B52421AA3000E53A5A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712A42421AA3000E53A5A /* Strings.swift */; };
@@ -112,6 +114,8 @@
 		BA8EEF542422912D00635996 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BA8EEF552422912E00635996 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		BA8EEF59242291BC00635996 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		BA8EEF5C242299A000635996 /* SearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVC.swift; sourceTree = "<group>"; };
+		BA8EEF5D242299A000635996 /* SearchTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTVC.xib; sourceTree = "<group>"; };
 		BAB7129D2421AA3000E53A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAB7129F2421AA3000E53A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAB712A02421AA3000E53A5A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -290,6 +294,7 @@
 		BA8EEF4F24228FA800635996 /* SearchVC */ = {
 			isa = PBXGroup;
 			children = (
+				BA8EEF5B2422998000635996 /* SearchTVC */,
 				BA8EEF5124228FE800635996 /* SearchVC.swift */,
 			);
 			path = SearchVC;
@@ -302,6 +307,15 @@
 				BAB712AC2421AA3000E53A5A /* HomeVC.swift */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		BA8EEF5B2422998000635996 /* SearchTVC */ = {
+			isa = PBXGroup;
+			children = (
+				BA8EEF5C242299A000635996 /* SearchTVC.swift */,
+				BA8EEF5D242299A000635996 /* SearchTVC.xib */,
+			);
+			path = SearchTVC;
 			sourceTree = "<group>";
 		};
 		BAB7129C2421AA3000E53A5A /* Ressources */ = {
@@ -584,6 +598,7 @@
 				BAB712F32421AAFD00E53A5A /* OFL.txt in Resources */,
 				BAB712B72421AA3000E53A5A /* Localizable.strings in Resources */,
 				BAB712FE2421AAFD00E53A5A /* Roboto-Italic.ttf in Resources */,
+				BA8EEF5F242299A000635996 /* SearchTVC.xib in Resources */,
 				BAB713012421AAFD00E53A5A /* Roboto-Bold.ttf in Resources */,
 				BAB713022421AAFD00E53A5A /* Roboto-Thin.ttf in Resources */,
 				BAB712FA2421AAFD00E53A5A /* Roboto-MediumItalic.ttf in Resources */,
@@ -757,6 +772,7 @@
 				BAB7131224226D9A00E53A5A /* MyJsonProvider.swift in Sources */,
 				BAB7130F24226C9E00E53A5A /* AppVersion.swift in Sources */,
 				BA8EEF442422857400635996 /* MenuCollectionViewCell.swift in Sources */,
+				BA8EEF5E242299A000635996 /* SearchTVC.swift in Sources */,
 				BA8EEF5224228FE800635996 /* SearchVC.swift in Sources */,
 				BA8EEF4D24228CFD00635996 /* LoaderView.swift in Sources */,
 			);
