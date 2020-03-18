@@ -9,6 +9,7 @@ target ‘Shionix’ do
   pod 'SwiftLint'
   pod 'SwiftGen'
   pod 'Toaster'
+  pod 'IDZSwiftCommonCrypto'
 
     target 'ShionixTests' do
         inherit! :search_paths

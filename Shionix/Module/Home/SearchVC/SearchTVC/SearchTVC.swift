@@ -16,7 +16,9 @@ final class SearchTVC: UITableViewCell, NibReusable {
     @IBOutlet private weak var phoneLabel: UILabel!
     
     // MARK:- Funcs
-    func fill() {
-        
+    func fill(item: SearchItem?) {
+        nameLabel.text = item?.name
+        emailLabel.text = item?.detail?.email
+        phoneLabel.text = item?.detail?.phone_number
     }
 }

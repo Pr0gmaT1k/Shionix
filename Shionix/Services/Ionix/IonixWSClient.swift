@@ -16,7 +16,9 @@ struct IonixWSClient {
             case let .success(response):
                 do {
                     completion?(.success(try response.filterSuccessfulStatusAndRedirectCodes().map(SearchResult.self)))
-                } catch let error { completion?(.failure(error.localizedDescription)) }
+                } catch let error {
+                    completion?(.failure(error.localizedDescription))
+                }
             case let .failure(error): completion?(.failure(error.localizedDescription))
             }
         }

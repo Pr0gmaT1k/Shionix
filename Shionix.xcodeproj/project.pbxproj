@@ -28,6 +28,7 @@
 		BA8EEF6A24229F4800635996 /* IonixProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF6924229F4800635996 /* IonixProvider.swift */; };
 		BA8EEF6C2422A0E400635996 /* IonixJsonKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF6B2422A0E400635996 /* IonixJsonKeys.swift */; };
 		BA8EEF6E2422A33F00635996 /* IonixWSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF6D2422A33F00635996 /* IonixWSClient.swift */; };
+		BA8EEF722422AE6D00635996 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF712422AE6D00635996 /* Obfuscator.swift */; };
 		BAB712B22421AA3000E53A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB7129D2421AA3000E53A5A /* Assets.xcassets */; };
 		BAB712B32421AA3000E53A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB7129E2421AA3000E53A5A /* LaunchScreen.storyboard */; };
 		BAB712B52421AA3000E53A5A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB712A42421AA3000E53A5A /* Strings.swift */; };
@@ -130,6 +131,7 @@
 		BA8EEF6924229F4800635996 /* IonixProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IonixProvider.swift; sourceTree = "<group>"; };
 		BA8EEF6B2422A0E400635996 /* IonixJsonKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IonixJsonKeys.swift; sourceTree = "<group>"; };
 		BA8EEF6D2422A33F00635996 /* IonixWSClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IonixWSClient.swift; sourceTree = "<group>"; };
+		BA8EEF712422AE6D00635996 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		BAB7129D2421AA3000E53A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAB7129F2421AA3000E53A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAB712A02421AA3000E53A5A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			children = (
 				BAB713152422700600E53A5A /* Extentions */,
 				BAB712A32421AA3000E53A5A /* Constants */,
+				BA8EEF4624228CFD00635996 /* Common */,
 				BAB712A22421AA3000E53A5A /* Coordination */,
 				BAB712AE2421AA3000E53A5A /* Environments */,
 				BAB712B12421AA3000E53A5A /* Models */,
@@ -300,6 +303,7 @@
 		BA8EEF4624228CFD00635996 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BA8EEF712422AE6D00635996 /* Obfuscator.swift */,
 				BA8EEF4924228CFD00635996 /* LoaderView.swift */,
 			);
 			path = Common;
@@ -390,7 +394,6 @@
 		BAB712AB2421AA3000E53A5A /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				BA8EEF4624228CFD00635996 /* Common */,
 				BAB7130624225B4E00E53A5A /* Home */,
 			);
 			path = Module;
@@ -811,6 +814,7 @@
 				BA8EEF4D24228CFD00635996 /* LoaderView.swift in Sources */,
 				BA8EEF6E2422A33F00635996 /* IonixWSClient.swift in Sources */,
 				BA8EEF6C2422A0E400635996 /* IonixJsonKeys.swift in Sources */,
+				BA8EEF722422AE6D00635996 /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
