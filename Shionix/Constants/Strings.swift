@@ -13,6 +13,8 @@ import Foundation
 internal enum L10n {
 
   internal enum Home {
+    /// Fransisco
+    internal static let nombre = L10n.tr("Localizable", "Home.Nombre")
     /// Bienvenido
     internal static let welcome = L10n.tr("Localizable", "Home.Welcome")
   }
