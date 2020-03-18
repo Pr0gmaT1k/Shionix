@@ -19,7 +19,7 @@ final class SearchVC: UIViewController {
     
     // MARK:- Properties
     weak var delegate: SearchVCDelegate?
-    private var source = [String]()
+    private var source = [SearchResult]()
     
     @IBAction func tapBack(_ sender: Any) {
         delegate?.didTapBack()
@@ -42,6 +42,6 @@ extension SearchVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return source.count
     }
 }
