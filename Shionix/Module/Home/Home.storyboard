@@ -84,111 +84,28 @@
                                     <constraint firstAttribute="bottom" secondItem="wr7-lB-PC2" secondAttribute="bottom" id="xXV-sM-eAe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-bp-yxv">
-                                <rect key="frame" x="147.5" y="611.5" width="119" height="119"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlM-8p-F3d" customClass="MenuView" customModule="Shionix" customModuleProvider="target">
+                                <rect key="frame" x="24" y="618" width="366" height="244"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="TF2-bp-yxv" secondAttribute="height" id="1rH-dd-a4u"/>
+                                    <constraint firstAttribute="width" secondItem="LlM-8p-F3d" secondAttribute="height" multiplier="3:2" id="hfR-Hs-HNx"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZ7-jS-TEu">
-                                <rect key="frame" x="270.5" y="611.5" width="119.5" height="119.5"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="rZ7-jS-TEu" secondAttribute="height" id="hRo-J6-ktS"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3o-xJ-5pd">
-                                <rect key="frame" x="24.5" y="611.5" width="119" height="119"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="N3o-xJ-5pd" secondAttribute="height" id="a0T-Ji-csX"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZn-l9-8BT">
-                                <rect key="frame" x="147.5" y="734.5" width="119" height="119.5"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="mZn-l9-8BT" secondAttribute="height" id="uXl-eR-eFm"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnn-Yi-M1s">
-                                <rect key="frame" x="270.5" y="734.5" width="119.5" height="119.5"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Bnn-Yi-M1s" secondAttribute="height" id="WKa-Xv-WRy"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2t-Nb-zmL">
-                                <rect key="frame" x="24" y="734.5" width="119.5" height="119.5"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="s2t-Nb-zmL" secondAttribute="height" id="3DD-Bi-2oZ"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TF2-bp-yxv" firstAttribute="leading" secondItem="N3o-xJ-5pd" secondAttribute="trailing" constant="4" id="42j-b5-Chb"/>
-                            <constraint firstItem="s2t-Nb-zmL" firstAttribute="width" secondItem="mZn-l9-8BT" secondAttribute="width" id="4SR-oi-CWG"/>
-                            <constraint firstItem="J2D-Ck-YN0" firstAttribute="trailing" secondItem="Bnn-Yi-M1s" secondAttribute="trailing" constant="24" id="4UT-kb-KbX"/>
+                            <constraint firstItem="LlM-8p-F3d" firstAttribute="centerX" secondItem="Jl6-LO-xy9" secondAttribute="centerX" id="24X-Ar-pML"/>
+                            <constraint firstAttribute="bottom" secondItem="LlM-8p-F3d" secondAttribute="bottom" constant="34" id="58p-jS-83G"/>
                             <constraint firstItem="J2D-Ck-YN0" firstAttribute="trailing" secondItem="P8D-ka-7TQ" secondAttribute="trailing" constant="8" id="7Xe-LW-nty"/>
-                            <constraint firstItem="TF2-bp-yxv" firstAttribute="centerX" secondItem="Jl6-LO-xy9" secondAttribute="centerX" id="7qQ-RQ-cQ1"/>
-                            <constraint firstItem="mZn-l9-8BT" firstAttribute="leading" secondItem="s2t-Nb-zmL" secondAttribute="trailing" constant="4" id="ArW-bm-Vjr"/>
-                            <constraint firstItem="N3o-xJ-5pd" firstAttribute="centerY" secondItem="TF2-bp-yxv" secondAttribute="centerY" id="BgJ-lK-Fwu"/>
-                            <constraint firstItem="s2t-Nb-zmL" firstAttribute="leading" secondItem="J2D-Ck-YN0" secondAttribute="leading" constant="24" id="FPB-pY-Lj6"/>
                             <constraint firstItem="UM9-FB-w3n" firstAttribute="top" secondItem="J2D-Ck-YN0" secondAttribute="top" constant="8" id="G3l-oS-mZR"/>
-                            <constraint firstItem="mZn-l9-8BT" firstAttribute="centerX" secondItem="Jl6-LO-xy9" secondAttribute="centerX" id="GD2-jG-Z3O"/>
                             <constraint firstItem="J2D-Ck-YN0" firstAttribute="trailing" secondItem="14i-V0-Jwm" secondAttribute="trailing" id="Hhk-mk-IxP"/>
-                            <constraint firstItem="rZ7-jS-TEu" firstAttribute="width" secondItem="TF2-bp-yxv" secondAttribute="width" multiplier="1.0042" id="Lqd-zb-TJ0"/>
-                            <constraint firstItem="J2D-Ck-YN0" firstAttribute="bottom" secondItem="mZn-l9-8BT" secondAttribute="bottom" constant="8" id="Muo-aX-5ce"/>
                             <constraint firstItem="P8D-ka-7TQ" firstAttribute="top" secondItem="J2D-Ck-YN0" secondAttribute="top" constant="8" id="N3o-fG-b6Z"/>
-                            <constraint firstItem="N3o-xJ-5pd" firstAttribute="width" secondItem="TF2-bp-yxv" secondAttribute="width" id="NTE-rx-uk7"/>
-                            <constraint firstItem="s2t-Nb-zmL" firstAttribute="centerY" secondItem="mZn-l9-8BT" secondAttribute="centerY" id="P0t-jH-4JD"/>
-                            <constraint firstItem="J2D-Ck-YN0" firstAttribute="trailing" secondItem="rZ7-jS-TEu" secondAttribute="trailing" constant="24" id="QU2-QS-5FL"/>
                             <constraint firstAttribute="bottom" secondItem="14i-V0-Jwm" secondAttribute="bottom" id="Qen-cA-Hjo"/>
                             <constraint firstItem="UM9-FB-w3n" firstAttribute="leading" secondItem="J2D-Ck-YN0" secondAttribute="leading" constant="8" id="Uod-AR-GBB"/>
-                            <constraint firstItem="mZn-l9-8BT" firstAttribute="top" secondItem="TF2-bp-yxv" secondAttribute="bottom" constant="4" id="aC0-9s-bYQ"/>
-                            <constraint firstItem="rZ7-jS-TEu" firstAttribute="leading" secondItem="TF2-bp-yxv" secondAttribute="trailing" constant="4" id="aYA-61-Tgh"/>
-                            <constraint firstItem="Bnn-Yi-M1s" firstAttribute="centerY" secondItem="mZn-l9-8BT" secondAttribute="centerY" id="bQU-jA-X93"/>
-                            <constraint firstItem="rZ7-jS-TEu" firstAttribute="centerY" secondItem="TF2-bp-yxv" secondAttribute="centerY" id="e66-vG-lf2"/>
-                            <constraint firstItem="Bnn-Yi-M1s" firstAttribute="leading" secondItem="mZn-l9-8BT" secondAttribute="trailing" constant="4" id="g26-8b-azR"/>
-                            <constraint firstItem="Bnn-Yi-M1s" firstAttribute="leading" secondItem="mZn-l9-8BT" secondAttribute="trailing" constant="4" id="huj-fY-2d3"/>
-                            <constraint firstItem="Bnn-Yi-M1s" firstAttribute="width" secondItem="mZn-l9-8BT" secondAttribute="width" id="iBI-IM-CHc"/>
-                            <constraint firstItem="mZn-l9-8BT" firstAttribute="leading" secondItem="s2t-Nb-zmL" secondAttribute="trailing" constant="4" id="iXi-gk-5dB"/>
                             <constraint firstItem="14i-V0-Jwm" firstAttribute="leading" secondItem="J2D-Ck-YN0" secondAttribute="leading" id="k4J-70-jar"/>
                             <constraint firstItem="P8D-ka-7TQ" firstAttribute="leading" secondItem="UM9-FB-w3n" secondAttribute="trailing" constant="8" id="omb-rZ-Iop"/>
                             <constraint firstItem="14i-V0-Jwm" firstAttribute="top" secondItem="Jl6-LO-xy9" secondAttribute="top" id="pQ8-V0-qEI"/>
+                            <constraint firstItem="LlM-8p-F3d" firstAttribute="leading" secondItem="J2D-Ck-YN0" secondAttribute="leading" constant="24" id="wF1-LQ-iJf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J2D-Ck-YN0"/>
                     </view>
