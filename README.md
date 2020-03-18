@@ -58,3 +58,8 @@ This project follow Gitflow's rules.
 Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.  
 ### Documentation:
 [EN](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) [ES](https://gfourmis.co/gitflow-sin-morir-en-el-intento/)
+
+# Ejercicio 2
+=================
+Para que el servidor intermedio no pueda leer los datos confidenciales, el cliente debe cifrarlos utilizando una clave pública emitida por el servidor de autorización.
+Debido a la naturaleza del cliente, recomiendo guardar la clave pública en el código. Para que esta clave no se pueda leer mediante descompilación debe estar cifrada, y descifrarse a la ejecución. En este caso, recomiendo descifrar la clave letra por letra con un « for loop ».
