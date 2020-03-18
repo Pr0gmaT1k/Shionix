@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toaster
 
 protocol SearchVCDelegate: class {
     func didTapBack()
@@ -28,9 +29,14 @@ final class SearchVC: UIViewController {
     // MARK:- Funcs
     override func viewDidLoad() {
         super.viewDidLoad()
+        // TableView
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(cellType: SearchTVC.self)
+        
+        // Search bar
+        searchBar.delegate = self
+        searchBar.becomeFirstResponder()
     }
 }
 
@@ -43,5 +49,21 @@ extension SearchVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return source.count
+    }
+}
+
+extension SearchVC: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        IonixWSClient.search(rut: searchText) { [weak self] result in
+            self?.hideLoader()
+            switch result {
+            case .success(let result): print(result)
+            case .failure(let error): Toast.init(text: error.localizedDescription).show()
+            }
+        }
     }
 }

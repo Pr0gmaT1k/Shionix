@@ -12,12 +12,12 @@ import RealmSwift
 public enum IonixProvider: TargetType {
     case search(rut: String)
     
-    public var baseURL: URL { URL(string: Environment.MyJson.baseURL) ?? URL(fileURLWithPath: "error") }
+    public var baseURL: URL { URL(string: Environment.Ionix.baseURL) ?? URL(fileURLWithPath: "error") }
     static let provider = MoyaProvider<Self>()
     
     public var path: String {
         switch self {
-        case .search: return "test-tecnico/search"
+        case .search: return "/test-tecnico/search"
         }
     }
     
